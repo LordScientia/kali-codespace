@@ -5,6 +5,5 @@
     "ghcr.io/devcontainers/features/sshd:1": {
       "version": "latest"
     }
-  },
-  "postCreateCommand": "apt-get update && apt-get install -y git && git clone https://github.com/t3l3machus/Villain.git /opt/Villain && pip install --break-system-packages -r /opt/Villain/requirements.txt"
+  }
 }
