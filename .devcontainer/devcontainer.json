@@ -1,9 +1,10 @@
 {
-  "name": "Kali",
-  "image": "kalilinux/kali-rolling",
-  "features": {
-    "ghcr.io/devcontainers/features/sshd:1": {
-      "version": "latest"
-    }
-  }
+    "name": "Kali",
+    "image": "kalilinux/kali-rolling",
+    "features": {
+        "ghcr.io/devcontainers/features/sshd:1": {
+            "version": "latest"
+        }
+    },
+    "postCreateCommand": "apt update && apt install -y kali-linux-default tigervnc-standalone-server kali-desktop-xfce"
 }
